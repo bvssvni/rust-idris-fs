@@ -1,0 +1,14 @@
+
+*.ll
+
+*.o
+
+idris/main
+
+idris/Main.ibc
+
+idris/search-llc.txt
+
+*.dylib
+
+*.rlib
