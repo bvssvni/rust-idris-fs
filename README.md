@@ -13,7 +13,6 @@ Issues labeled with `Information` contains useful information to solve problems 
 You can use the search bar at the top to quickly look up a topic.
 
 So far the progress made is [Calling a simple function written in Rust from Idris](https://github.com/bvssvni/rust-idris-fs/issues/2).  
-To do this you need to [Build Idris with FFI support](https://github.com/bvssvni/rust-idris-fs/issues/3).  
 
 ## Goals
 
@@ -24,6 +23,16 @@ To do this you need to [Build Idris with FFI support](https://github.com/bvssvni
 
 - To build a feature complete library to ship with Idris (this is just an experiment)
 - Windows support
+
+## Requirements
+
+You need to [Build Idris with FFI support](https://github.com/bvssvni/rust-idris-fs/issues/3).  
+On OSX you might [experience problems with cabal](https://github.com/bvssvni/rust-idris-fs/issues/4).  
+To install Rust nightly version, type `make nightly-install`.  
+
+## Installing
+
+There is no build script added yet to the repo.
 
 ##About Idris & Rust
 
