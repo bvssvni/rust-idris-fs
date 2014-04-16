@@ -3,6 +3,30 @@ Rust-Idris-Fs
 
 An attempt at writing a C library in Rust that can be called from Idris  
 
+# About Rust-Idris-Fs
+
+This is a project to demonstrate implementation of a few file system functions.  
+At the moment these features lack in Idris, but is supported in Rust.  
+'Fs' stands for file system.  
+
+Issues labeled with `Information` contains useful information to solve problems associated with writing cross language libraries.  
+You can use the search bar at the top to quickly look up a topic.
+
+So far the progress made is [Calling a simple function written in Rust from Idris](https://github.com/bvssvni/rust-idris-fs/issues/2).  
+To do this you need to [Build Idris with FFI support](https://github.com/bvssvni/rust-idris-fs/issues/3).  
+
+## Goals
+
+- To prove that a file system library written in Rust can be called from Idris.  
+- Linux and OSX support
+
+## Non-Goals
+
+- To build a feature complete library to ship with Idris (this is just an experiment)
+- Windows support
+
+##About Idris & Rust
+
 Rust is a low level language but with a rapidly growing number of available libraries.  
 Idris is a high level language with dependent types and a REPL environment.  
 
@@ -31,26 +55,7 @@ The language allows one to have more choices and aggressively optimize for a spe
  - Cross platform
  - Easy to use/write C libraries
 
-### Why Rust & Idris?
-
-Rust & Idris can both compile to binaries.  
-End users usually do not care how you make them.  
-It also matters how much fun you will have writing it.  
-Some things are easy to write in Rust that are hard in Idris and vice versa.  
-
-The biggest advantages of Idris over Rust is:
-
- - A nice interactive REPL environment
- - A simpler type system with simpler rules
-
-The biggest advantages of Rust over Idris is:
-
- - Easy to write imperative low level code
- - Backed by Mozilla with a fast growing community
-
-If you like to write code in Idris, you will find lack of many libraries.  
-Writing C libraries in C/C++ is hard and unsafe.  
-Rust is a better language for this.  
+### Why Idris & Rust?
 
 Together they have the advantages:
 
@@ -59,13 +64,3 @@ Together they have the advantages:
  - Cross platform development
  - Native compiling
  - Harder to shoot yourself in the foot.
-
-## Goals
-
-- To prove that a file system library written in Rust can be called from Idris.  
-- Linux and OSX support
-
-## Non-Goals
-
-- To build a feature complete library to ship with Idris (this is just an experiment)
-- Windows support
