@@ -1,14 +1,5 @@
-
-*.ll
-
-*.o
-
-idris/main
+/target
 
 idris/Main.ibc
 
-idris/search-llc.txt
-
-*.dylib
-
-*.rlib
+idrisfs
