@@ -1,0 +1,4 @@
+[package]
+name = "idrisfs"
+version = "0.1.0"
+authors = ["Sven Nilsen <bvssvni@gmail.com>"]

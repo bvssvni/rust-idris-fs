@@ -1,7 +1,8 @@
+#include <stdint.h>
 
 #ifndef IDRISFS
 #define IDRISFS
 
-int sizeof_int(void);
+uint64_t sizeof_isize(void);
 
 #endif

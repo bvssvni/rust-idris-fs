@@ -3,11 +3,10 @@ module Main
 %include C "idrisfs.h"
 %link C "idrisfs.o"
 
-getSizeInt : IO Int
-getSizeInt = mkForeign (FFun "sizeof_int" [] FInt)
+getSizeIsize : IO Int
+getSizeIsize = foreign FFI_C "sizeof_isize" (IO Int)
 
 main : IO ()
 main = do
-  x <- getSizeInt
-  putStrLn (show x)
-
+    x <- getSizeIsize
+    putStrLn (show x)
